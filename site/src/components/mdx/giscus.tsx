@@ -15,7 +15,7 @@ export const Giscus = ({ ...props }: GiscusProps) => {
     script.src = 'https://giscus.app/client.js';
     script.setAttribute('data-repo', 'ohprettyhak/haklee.me');
     script.setAttribute('data-repo-id', 'R_kgDOMBikNQ');
-    script.setAttribute('data-category', 'General');
+    script.setAttribute('data-category', 'Articles');
     script.setAttribute('data-category-id', 'DIC_kwDOMBikNc4Clm-H');
     script.setAttribute('data-mapping', 'pathname');
     script.setAttribute('data-strict', '0');
@@ -23,7 +23,10 @@ export const Giscus = ({ ...props }: GiscusProps) => {
     script.setAttribute('data-emit-metadata', '0');
     script.setAttribute('data-input-position', 'bottom');
     script.setAttribute('data-lang', 'ko');
-    script.setAttribute('data-theme', resolvedTheme === 'dark' ? 'noborder_dark' : 'noborder_light');
+    script.setAttribute(
+      'data-theme',
+      resolvedTheme === 'dark' ? 'noborder_dark' : 'noborder_light',
+    );
     script.setAttribute('crossorigin', 'anonymous');
     script.async = true;
 
